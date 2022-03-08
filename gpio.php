@@ -20,7 +20,7 @@
      if (isset($_GET['on'])) {
          $gpio_on = shell_exec("/usr/local/bin/gpio -g write 21 1");
          echo 'LED is on!'
-     }
+    }
      else if (isset($_GET['off'])) {
         $gpio_off = shell_exec("/usr/local/bin/gpio -g write 21 0");
         echo 'LED is off!'
